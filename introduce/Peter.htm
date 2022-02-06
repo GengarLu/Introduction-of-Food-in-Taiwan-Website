@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Peter's introduction</title>
+<link rel="stylesheet" href="Team_member_introduction.css" />
+<style>
+<!--
+.intro{
+position:fixed;
+left:0;
+top:0;
+layer-background-color:green;
+background-color:green;
+border:0.1px solid green;
+z-index:10;
+}
+-->
+</style>
+</head>
+
+<body>
+<div class="header">
+<h1>陳宇治的詳細介紹</h1>
+</div>
+<div class="main">
+<div class="singlePageReview">
+
+<div class="review">
+<h2>陳宇治的經歷和介紹</h2>
+<p class="byline">Peter</p>
+<img src="Introduce_image/IMG_20201116_104401.jpg" alt="Face">
+<p>
+	我是個個性隨和無爭的人，平時喜歡打球，研究新事物。<br>
+	美食和旅遊對我來說是相當喜愛也有興趣。目前是大學二年級，<br>
+	多專注於念書，也偶爾和朋友玩樂，平時也有在打工獲取社會經驗。<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	作者的話:<br>
+	<br>
+	對於這次設計成果，和搭檔思考主題時也是很快就定了下來。<br>
+	做美食這個主題可以說是我們都十分有興趣，有幸這次能和網頁設計進行連結，<br>
+	也透過這次設計的過程中，找了很多資料，獲取了很多知識。<br>
+	但其中也有遇到許多困難，和溝通的問題，並非每次都能漂亮的解決。<br>
+	我們能一路這樣堅持至此，也多虧了互相包容理解。<br>
+	雖然結果不像起初思考的那樣華麗流暢，但也是我們付出了許多的成果，謝謝各位!
+</p>
+<p class="reviewEnd"><a href="Team_member_introduction.htm">Back</a></p>
+</p>
+</div>
+</div>
+</div>
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div><div id="i3"
+class="intro"></div><div id="i4" class="intro"></div><div id="i5" class="intro"></div><div
+id="i6" class="intro"></div><div id="i7" class="intro"></div><div id="i8" class="intro"></div>
+<script language="JavaScript1.2">
+
+/*
+Top-Down Curtain Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more free DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+
+var clipbottom=(window.innerHeight)?window.innerHeight:document.body.offsetHeight
+cliptop=0
+for (i=1;i<=8;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?window.innerWidth/8-2 + 'px':document.body.clientWidth/8 + 'px'
+temp[i].height=(window.innerWidth)?window.innerHeight + 'px':document.body.offsetHeight + 'px'
+temp[i].left=(i-1)*parseInt(temp[i].width) + 'px'
+}
+
+function openit(){
+
+clipbottom-=speed
+for (i=1;i<=8;i=i+2){
+temp[i].clip="rect(0 auto "+clipbottom+"px 0)"
+}
+cliptop+=speed
+for (i=2;i<=8;i=i+2){
+temp[i].clip="rect("+cliptop+"px auto auto auto)"
+}
+if (clipbottom<=0){
+for (i=1;i<=8;i++)
+temp[i].display="none"
+clearInterval(stopit)
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+</script>
+</body>
+
+</html>

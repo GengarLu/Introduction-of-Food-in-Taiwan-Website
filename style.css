@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+div.outset {
+	width: 700px;
+	height: 2500px;
+	border-style: outset;
+	border-width: 8px;
+	border-color: #00BDFF;
+	position: relative;
+	left: 440px;
+}
+
+h3 {
+	font-family: "Comic Sans MS";
+	text-align: center;
+	color: darkred;
+}
+
+h4 {
+	font-family: "Comic Sans MS";
+	text-align: center;
+	color: darkred;
+}
+
+table{
+	position: relative;
+	left: 170px;
+}
+
+caption{
+	font-family: "Comic Sans MS";
+	color: darkred;
+}
+
+div.introduce{
+	font-family: "Comic Sans MS";
+	text-align: center;
+	color: #0082B6;
+}
+
+body{
+	background-image:url("image/food_background.png");
+}
+
+ul,ol{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+div.menu{
+	width: 600px;
+	height: 80px;
+	background: url(image/button.png);
+	position: relative;
+	left: 50px;
+}
+
+div.menu ul{
+	background: url(image/button.png) no-repeat right top;
+	height: 80px;
+}
+
+div.menu ul li a{
+	color: aliceblue;
+	text-decoration: none;
+}
+
+div.menu ul li{
+	float: left;
+	line-height: 80px;
+	padding: 0px 10px;
+	position: relative;
+}
+
+div.menu ul li:hover .submenu{
+	display: block;
+}
+
+div.menu ul li .submenu{
+	position: absolute;
+	background: url(image/button2.png);
+	width: 130px;
+	padding-top: 10px;
+	display: none;
+}
+
+div.menu ul li ol{
+	background: url(image/button2.png) bottom;
+	padding: 0px 10px 10px 10px;
+}
+
+div.menu ul li ol li{
+	float: none;
+	line-height: 20px;
+	padding: 0px 5px;
+}
+
+audio{
+	position: relative;
+	left: 650px;
+}

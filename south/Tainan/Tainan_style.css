@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.outset {
+	width: 700px;
+	height: 3900px;
+	border-style: outset;
+	border-width: 8px;
+	border-color: saddlebrown;
+	position: relative;
+	left: 440px;
+}
+
+h3 {
+	font-family: "Comic Sans MS";
+	text-align: left;
+	color: black;
+}
+
+h4 {
+	font-family: "Comic Sans MS";
+	text-align: left;
+	color: dodgerblue;
+}
+
+h5 {
+	font-family: "Comic Sans MS";
+	text-align: left;
+	color: black;
+}
+
+a {
+	font-family: "Comic Sans MS";
+	color: #0082B6;
+}
+
+body{
+	background-image:url("Tainan_image/food_background.png");
+}
